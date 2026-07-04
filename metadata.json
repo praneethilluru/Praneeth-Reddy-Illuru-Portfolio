@@ -1,0 +1,6 @@
+{
+  "name": "Dark Portfolio Landing Page",
+  "description": "A dark, highly polished portfolio landing page featuring fluid GSAP animations, Framer Motion transitions, and HLS video integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
