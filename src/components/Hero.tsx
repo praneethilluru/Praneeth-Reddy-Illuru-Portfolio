@@ -89,9 +89,14 @@ export default function Hero({ onSeeWorkClick, onContactClick }: HeroProps) {
   }, []);
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    const lenis = (window as any).lenis;
+    if (lenis) {
+      lenis.scrollTo(`#${id}`);
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 
